@@ -282,13 +282,13 @@ ul li {
 }
    
 
-.price-card .btn-main,
+.price-card .btn-main1,
 .price-card .btn-primary {
     display: block;
     margin: 20px auto 0 auto; /* Center the button horizontally and add top margin */
     font-size: 14px; /* Adjust font size for readability */
     border-radius: 4px; /* Rounded corners for the button */
-    padding: 10px 20px; /* Adjust padding for better appearance */
+    padding: 5px 20px; /* Adjust padding for better appearance */
     border: none; /* Remove border */
     color: #fff; /* Text color for the button */
     text-align: center; /* Center text inside the button */
@@ -300,6 +300,35 @@ ul li {
 
 
 
+
+.popular-tag {
+    position: absolute;
+    top: 0;
+    left : 0;
+    width: 80px ;
+    border-top: 80px solid #0cc652;
+    border-right: 80px solid transparent;
+
+    /* color: #fff;
+    padding: 5px 10px;  */
+    /* border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;    */
+
+}
+
+.popular-tag .text{
+    position: relative;
+    top: -45px;
+    left: 10px;
+    rotate: -45deg;
+    color: #fff;
+
+}
+
+
+
+  
 
 
 
