@@ -1,0 +1,20 @@
+Uri: https://colorlib.com/etc/searchf/colorlib-search-3/
+File Name: C:\Downloaded Web Sites\colorlib.com\etc\searchf\colorlib-search-3\index.htm
+Content Type: text/html
+
+Uri: https://colorlib.com/etc/searchf/colorlib-search-3/css/main.css
+File Name: C:\Downloaded Web Sites\colorlib.com\etc\searchf\colorlib-search-3\css\main.css
+Content Type: text/css
+
+Uri: https://colorlib.com/etc/searchf/colorlib-search-3/js/extention/choices.js
+File Name: C:\Downloaded Web Sites\colorlib.com\etc\searchf\colorlib-search-3\js\extention\choices.js
+Content Type: application/javascript
+
+Uri: https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993
+File Name: C:\Downloaded Web Sites\colorlib.com\beacon.min.js\vaafb692b2aea4879b33c060e79fe94621666317369993
+Content Type: text/javascript
+
+Uri: https://www.googletagmanager.com/gtag/js?id=UA-23581568-13
+File Name: C:\Downloaded Web Sites\colorlib.com\gtag\js
+Content Type: application/javascript
+
