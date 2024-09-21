@@ -116,7 +116,7 @@
                 <!-- Pricing Table starts -->
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
-                        <form name="contactForm" id="contact_form" class="position-relative z1000" method="post" action="#">
+                        <form name="contactForm" id="contact_form" class="position-relative z1000" method="post" action="send_mail.php">
                             <div class="row gx-4">
                                 <div class="col-lg-6 col-md-6 mb10">
                                     <div class="field-set">
@@ -331,17 +331,68 @@
 
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Get the URL query parameter for speed
-            const urlParams = new URLSearchParams(window.location.search);
-            const speed = urlParams.get('speed');
-    
-            // If speed parameter is present, select the corresponding option
-            if (speed) {
-                const speedSelect = document.getElementById('speed');
-                speedSelect.value = speed;
-            }
-        });
+                document.addEventListener('DOMContentLoaded', function() {
+                    // Get the URL query parameter for speed
+                    const urlParams = new URLSearchParams(window.location.search);
+                    const speed = urlParams.get('speed');
+            
+                    // If speed parameter is present, select the corresponding option
+                    if (speed) {
+                        const speedSelect = document.getElementById('speed');
+                        speedSelect.value = speed;
+                    }
+                });
+
+
+
+
+
+
+                document.getElementById('contact_form').addEventListener('submit', function(event) {
+                let valid = true;
+                let errorMessage = "";
+
+                // Validate name
+                const name = document.getElementById('name').value.trim();
+                if (!name) {
+                    valid = false;
+                    errorMessage += "Name is required.\n";
+                }
+
+                // Validate email
+                const email = document.getElementById('email').value.trim();
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!email || !emailRegex.test(email)) {
+                    valid = false;
+                    errorMessage += "Valid email is required.\n";
+                }
+
+                // Validate phone
+                const phone = document.getElementById('phone').value.trim();
+                if (!phone) {
+                    valid = false;
+                    errorMessage += "Phone number is required.\n";
+                }
+
+                // Validate speed
+                const speed = document.getElementById('speed').value;
+                if (!speed) {
+                    valid = false;
+                    errorMessage += "Please select a speed.\n";
+                }
+
+                // Validate message
+                const message = document.getElementById('message').value.trim();
+                if (!message) {
+                    valid = false;
+                    errorMessage += "Message is required.\n";
+                }
+
+                if (!valid) {
+                    event.preventDefault(); // Prevent form submission
+                    alert(errorMessage); // Show error message
+                }
+            });
     </script>
     
 
