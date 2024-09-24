@@ -35,9 +35,9 @@
             box-shadow: none;
             border-color: #ced4da;
         } */
-        .form-control{
+        /* .form-control{
             height: 50px;
-        }
+        } */
        
         .form-control {
   border: none;
@@ -63,6 +63,23 @@
     -webkit-box-shadow: none;
     box-shadow: none; }
 
+
+    .p-c{
+        height: 50px;
+
+    }
+    
+
+    .pr-c{
+        padding-right: 100px;     
+    }
+
+    .display-4{
+        line-height: 1.1em !important;
+    }
+    .fw-bold{
+       font-weight: 600 !important;
+    }
     </style>
 
 
@@ -184,7 +201,33 @@
                                 </div>
                                 <div class="sw-overlay s2"></div>
                             </div>                            
-                        </div>              
+                        </div>  
+
+                        
+                         <!-- Slides -->
+                        <div class="swiper-slide" data-jarallax-element="150">
+                            <div class="swiper-inner" data-bgimage="url(images/background/1.3.jpg)">
+                                <div class="sw-caption">
+                                    <div class="container">
+                                        <div class="row gx-5 align-items-center">
+                                            <div class="col-lg-12">
+                                                <div class="subtitle s2 mb-4">Trusted IT Solutions</div>
+                                            </div>
+                                            <div class="col-lg-8 mb-sm-30">
+                                                <h2 class="slider-title">Simplify.<br>Solve.<br>Succeed.</h2>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <p class="slider-teaser">We are team of tech enthusiasts dedicated to taking your technology aspirations to new heights.</p>
+                                                <hr class="s2">
+                                                <div class="spacer-10"></div>
+                                                <a class="btn-main mb10" href="#">Free Consultation</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sw-overlay s2"></div>
+                            </div>                            
+                        </div> 
 
                       </div>
                       <!-- If we need pagination -->
@@ -781,26 +824,27 @@
         <section id="contact">
             <div class="container ">
                 <div class="row">
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <h2 class="display-4 fw-bold mb-4">Let's talk about everything!</h2>
-                        <p class="text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas debitis, fugit natus?</p>
-                        <img src="images/undraw-contact.svg" alt="Contact illustration" class="img-fluid">
+                    <div class="col-md-6 mb-4 mb-md-0 pr-c">
+                        <h2 class="display-4 fw-bold mb-2 wow fadeInUp"  data-wow-delay=".2s">Let's talk about everything!</h2>
+                        <p class="text-muted wow fadeInUp ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas debitis, fugit natus?</p>
+                        <img src="images/contact form-img.jpg" alt="Contact illustration" class="img-fluid wow fadeInLeft animated"">
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 wow fadeInRight animated"">
                         <form>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Your name" required>
+                            <div class="mb-3 ">
+                                <input type="text" class="form-control p-c" placeholder="Your name" required>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Email" required>
+                                <input type="email" class="form-control p-c" placeholder="Email" required>
                             </div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Subject" required>
+                                <input type="text" class="form-control p-c" placeholder="Subject" required>
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" rows="5" placeholder="Write your message" required></textarea>
+                                <textarea class="form-control " rows="5" placeholder="Write your message" required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary px-4 py-2 ">Send Message</button>
+                            <a class="btn-main mb10" href="#">Send Message</a>
+                            <!-- <button type="submit" class="btn btn-primary px-4 py-2 ">Send Message</button> -->
                         </form>
                     </div>
                 </div>
