@@ -361,11 +361,25 @@ ul li {
 
 /* Abou us  */
 
-bg-color1{
+.bg-color1{
     
 }
 
+.about-padding{
+   padding: 100px 0 100px 0 !important;
+}
 
+/* Client Section */
+
+.Client-padding{
+    padding-top: 150px !important;
+    padding-bottom: 100px !important;
+}
+
+.Contact-Padding{
+    padding: 100px 0 0 0 !important;
+    
+}
 
 
 
