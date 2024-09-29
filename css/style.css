@@ -12585,20 +12585,45 @@ p.slider-teaser{
   font-size: 20px;
 }
 
-.swiper-button-next, .swiper-button-prev{
-  color:#ffffff;
+.swiper-button-next, .swiper-button-prev {
+  color: #ffffff;
+  width: 50px; /* Larger, modern look */
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3); /* Subtle dark transparency */
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5); /* Glowing effect for modern AI feel */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth modern transition */
+  backdrop-filter: blur(10px); /* Blur effect for futuristic glassy look */
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for definition */
 }
 
-.swiper-button-next:after, .swiper-button-prev:after{
-  font-size:24px;
+/* Adjust arrow icon size */
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 22px; /* Larger, bolder icons */
 }
 
-.swiper-button-next{
+/* Positioning */
+.swiper-button-next {
   right: 20px;
 }
 
-.swiper-button-prev{
+.swiper-button-prev {
   left: 20px;
+}
+
+/* Hover effect for futuristic interaction */
+.swiper-button-next:hover, .swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.6); /* Darker background on hover */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.9); /* Stronger glowing effect on hover */
+  transform: scale(1.1); /* Slight scale for interaction */
+}
+
+/* Arrow color adjustment for better visibility */
+.swiper-button-next:after, .swiper-button-prev:after {
+  color: #00ffff; /* AI-like neon color for arrows */
 }
 
 .sw-price{
