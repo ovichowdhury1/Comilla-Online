@@ -388,6 +388,20 @@ ul li {
     
 }
 
+/* Top Bar */
+
+
+.topbar-socialicon i{
+    border-radius: 50% !important;
+    color: #fff !important;
+    background: none !important;
+    margin: 0 0 0 0 !important;
+}
+
+
+
+
+
 
 
 
