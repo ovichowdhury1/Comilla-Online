@@ -347,10 +347,6 @@ ul li {
 
 /* Abou us  */
 
-.bg-color1{
-    
-}
-
 .about-padding{
    padding: 100px 0 100px 0 !important;
 }
@@ -385,9 +381,22 @@ ul li {
 }
 
 
+/* Contact Section */
 
 
 
+.Contact-Padding p{
+    margin-bottom: 0 !important;
+}
+
+
+
+/* Footer */
+
+
+.social-icon-design a i{
+    border-radius: 50%;
+}
 
 
 
