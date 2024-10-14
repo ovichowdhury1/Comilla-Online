@@ -878,22 +878,23 @@
                     <img src="images/background/3094336.jpg" alt="Contact illustration" class="img-fluid wow fadeInLeft animated"">
                 </div>
                 <div class="col-md-6 wow fadeInRight animated"">
-                    <form>
-                        <div class="mb-3 ">
-                            <input type="text" class="form-control p-c" placeholder="Your name" required>
+
+                    <form action="send_mail_form.php" method="POST">
+                        <div class="mb-3">
+                            <input type="text" class="form-control p-c" placeholder="Your name" name="name" required>
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control p-c" placeholder="Email" required>
+                            <input type="email" class="form-control p-c" placeholder="Email" name="email" required>
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control p-c" placeholder="Subject" required>
+                            <input type="text" class="form-control p-c" placeholder="Subject" name="subject" required>
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control " rows="5" placeholder="Write your message" required></textarea>
+                            <textarea class="form-control" rows="5" placeholder="Write your message" name="message" required></textarea>
                         </div>
-                        <a class="btn-main mb10" href="#">Send Message</a>
-                        <!-- <button type="submit" class="btn btn-primary px-4 py-2 ">Send Message</button> -->
+                        <button type="submit" class="btn-main mb10">Send Message</button>
                     </form>
+
                 </div>
             </div>
         </div>
@@ -1109,7 +1110,35 @@
                 "retina_detect": true
             });
         </script>
+        
 
+        <!-- Contcat Form  -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const form = document.querySelector("form");
+                form.addEventListener("submit", function (event) {
+                    const name = form.querySelector("input[placeholder='Your name']").value.trim();
+                    const email = form.querySelector("input[placeholder='Email']").value.trim();
+                    const subject = form.querySelector("input[placeholder='Subject']").value.trim();
+                    const message = form.querySelector("textarea[placeholder='Write your message']").value.trim();
+        
+                    if (!name || !email || !subject || !message) {
+                        event.preventDefault();
+                        alert("Please fill in all fields.");
+                        return false;
+                    }
+        
+                    // Basic email format check
+                    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                    if (!emailPattern.test(email)) {
+                        event.preventDefault();
+                        alert("Please enter a valid email address.");
+                        return false;
+                    }
+                });
+            });
+        </script>
+        
 </body>
 
 </html>
